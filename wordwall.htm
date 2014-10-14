@@ -1,0 +1,31 @@
+<html lang="en-US" style="height: 100%;">
+	<head>
+		<link rel="stylesheet" type="text/css" href="wordwall.css">
+	</head>
+	<script language="JavaScript" src="wordwall.js"></script>
+	<body onLoad="startup()">
+
+  <div id=WorkDiv>
+      <div id=WordsDiv>
+	    <center><p id="word" class="bigword"></p></center>
+	  </div>
+
+	  <div id=ButtonsDiv>
+		  <button type="button" class="yesButton" onClick="correct(true)">&#10003;</button>
+		  <button type="button" class="noButton" onClick="correct(false)">x</button>
+	  </div>
+
+	  <div id=StatsDiv>
+		  <center><p id="mystats" class="stats"></p></center>
+	  </div>
+  </div>
+
+
+	<div id=DebugDiv>
+		<center><p id="debug_currentWord" ></p></center>
+		<center><p id="debug_testList"></p></center>
+		<center><p id="debug_correctList"></p></center>
+		<center><p id="debug_incorrectList"></p></center>
+	</div>
+
+</html>
